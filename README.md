@@ -50,13 +50,13 @@ v1.0.0
 
 		{
 
-			“name”: "大头虾越南餐厅",
+			"name": "大头虾越南餐厅",
 
-			“cost”: 100,
+			"cost": 100,
 
 			"position": "广州市XX区XX路XX号"，
 
-			“url”: "http://www.woyaochi.com"
+			"url": "http://www.woyaochi.com"
 
 		}
 
@@ -100,7 +100,7 @@ v1.0.0
 
 				"taste": 4,
 
-				”person“: 4
+				"person": 4
 
 			}
 
