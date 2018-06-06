@@ -45,69 +45,37 @@ v1.0.0
 
 ```json
 {
-
 	"wish": [
-
 		{
-
 			"name": "大头虾越南餐厅",
-
 			"cost": 100,
-
 			"position": "广州市XX区XX路XX号",
-
 			"url": "http://www.woyaochi.com"
-
 		}
-
 	],
-
 	"experience": [
-
 		{
-
 			"name": "丽的面家",
-
 			"cost": "30",
-
 			"dishes": [
-
 				{
-
 					"name": "鲜虾云吞面（细蓉）",
-
 					"price": 25,
-
 					"img": "http://xxxx.xxxx.com"
-
 				}
-
 			],
-
 			"description": "这家店很好XXXX",
-
 			"position": "广州市xx区xx路xx号",
-
 			"url": "http://www.woyaochi.com",
-
 			"score": {
-
 				"environment": 4,
-
 				"traffic": 4,
-
 				"service": 4,
-
 				"taste": 4,
-
 				"person": 4
-
 			}
-
 		}
-
 	]
-
 }
 
 ```
