@@ -1,18 +1,25 @@
 <template>
-  <div class='full-width center-content'>
-    <hello-compoent name='World'></hello-compoent>
+  <div class='amap-wrapper'>
+    <el-amap class="amap-box" :vid="'amap-vue'" :zoom='10' :center='[113.23, 23.16]'>
+    </el-amap>
   </div>
 </template>
 
 <script>
-  import HelloCompoent from './components/HelloComponent.vue';
   
   export default {
-    components: {
-      HelloCompoent
-    }
+    
   }
 </script>
+
+<style lang='scss' scoped>
+  .amap-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
 
 
 

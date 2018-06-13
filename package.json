@@ -7,10 +7,11 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --config build/webpack.config.dev.js",
-    "dev": "webpack-dev-server --config build/webpack.config.dev.js"
+    "dev": "webpack-dev-server --config build/webpack.config.dev.js --open"
   },
   "dependencies": {
     "vue": "^2.5.16",
+    "vue-amap": "^0.5.7",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
