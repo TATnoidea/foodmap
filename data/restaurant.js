@@ -16,6 +16,8 @@ const data = [
   {"label":{"content":"文记壹心鸡","offset":[-20,-20]},"location":{"lng":113.242019,"lat":23.115256}},
   {"label":{"content":"巧美面店(惠福东店)","offset":[-20,-20]},"location":{"lng":113.264855,"lat":23.120582}},
   {"label":{"content":"陶陶居","offset":[-20,-20]},"location":{"lng":113.242505,"lat":23.113351}},
-  {"label":{"content":"陶陶居酒家(北京路店)","offset":[-20,-20]},"location":{"lng":113.269936,"lat":23.119657}}
+  {"label":{"content":"陶陶居酒家(北京路店)","offset":[-20,-20]},"location":{"lng":113.269936,"lat":23.119657}},
+  {"label":{"content":"顺记冰室","offset":[-20,-20]},"location":{"lng":113.241749,"lat":23.115329}},
+  {"label":{"content":"开记甜品(多宝路三分店)","offset":[-20,-20]},"location":{"lng":113.241172,"lat":23.116451}}
 ]
 export default data;
