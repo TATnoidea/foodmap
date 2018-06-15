@@ -50,6 +50,10 @@ v1.0.0
 			"name": "大头虾越南餐厅",
 			"cost": 100,
 			"position": "广州市XX区XX路XX号",
+			"location": {
+				"lat": 22,
+				"lng": 113
+			},
 			"url": "http://www.woyaochi.com"
 		}
 	],
@@ -64,6 +68,10 @@ v1.0.0
 					"img": "http://xxxx.xxxx.com"
 				}
 			],
+			"location": {
+				"lat": 22,
+				"lng": 113
+			},
 			"description": "这家店很好XXXX",
 			"position": "广州市xx区xx路xx号",
 			"url": "http://www.woyaochi.com",
