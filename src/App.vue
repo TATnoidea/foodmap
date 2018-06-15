@@ -17,15 +17,16 @@
       :label='resMarker.label'
       :position='[resMarker.location.lng, resMarker.location.lat]'>
       </el-amap-marker>
-
-      <el-amap-marker
-      v-for='(marker, index) in markers' 
-      :key='index' 
-      :position='marker.position'
-      :label='marker.label' 
-      :vid='index'>
-      </el-amap-marker>
-
+      <template v-if='markers'>
+        <el-amap-marker
+        v-if='markers'
+        v-for='(marker, index) in markers' 
+        :key='index' 
+        :position='[marker.location.lng, marker.location.lat]'
+        :label='marker.label' 
+        :vid='index'>
+        </el-amap-marker>
+      </template>
     </el-amap>
     <ul v-show='searchResult' class='search-result'>
       <button @click='closeSearch()' class='close'>X</button>
@@ -37,21 +38,13 @@
 </template>
 
 <script>
-  
+  import data from '../data/restaurant.js'
   export default {
     data() {
       return {
         center: [113.23, 23.16],
         zoom: 10,
-        markers: [
-          {
-            label: {
-              content: '生记肠粉店',
-              offset: [-20, -20]
-            },
-            position: [113.238446, 23.116521],
-          }
-        ],
+        markers: data,
         searchResult: '',
         resMarker: '',
       }
@@ -72,7 +65,7 @@
         this.searchResult = res;
       },
       getPos(item) {
-        this.resMarker = {
+        const marker = {
           label: {
             content: item.name,
             offset: [-20, -20]
@@ -82,13 +75,18 @@
             lat: item.location.lat
           }
         }
+        console.log(JSON.stringify(marker));
+        this.resMarker = marker;
         this.center = [item.location.lng, item.location.lat];
-        this.zoom = 15
+        this.zoom = 15;
       },
       closeSearch() {
         this.searchResult = '';
         this.resMarker = '';
       }
+    },
+    created() {
+      this.markers = data;
     }
   }
 </script>
@@ -120,6 +118,7 @@
         border: none;
         outline: none;
         align-self: flex-end;
+        cursor: pointer;
       }
       .search-item {
         height: 30px;
