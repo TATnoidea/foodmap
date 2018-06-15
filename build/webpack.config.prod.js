@@ -48,7 +48,7 @@ module.exports = {
       template: 'index.html',
       inject: true,
       minify: {
-        removeAttributeQuotes: true,
+        removeComments: true,
       }
     })
   ]
